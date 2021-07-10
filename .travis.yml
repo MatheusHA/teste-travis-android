@@ -6,6 +6,9 @@ android:
     - build-tools-31.0.0
 
     - android-30
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
 
 before_install:
   - chmod +x gradlew
