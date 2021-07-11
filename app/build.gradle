@@ -19,6 +19,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            buildConfigField("String", "CONTENT", "\"${System.getenv("CONTENT")}\"")
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
